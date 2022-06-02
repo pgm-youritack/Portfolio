@@ -1,0 +1,30 @@
+.technologies {
+  @include center();
+  display: flex;
+  flex-direction: column;
+  .lists__technologies {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    
+    .list__technologies {
+      .list {
+        display: flex;
+        width: fit-content;
+        flex-direction: column;
+        gap: 32px;
+        height: 320px;
+        overflow-y: scroll;
+        box-shadow: inset black;
+        .list__item {
+          display: flex;
+          flex-direction: row;
+          gap: 20px;
+          align-items: center;
+          width: 223px;
+          margin-left: -32px;
+        }
+      }
+    }
+  }
+}

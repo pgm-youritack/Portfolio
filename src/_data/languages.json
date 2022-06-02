@@ -1,0 +1,82 @@
+{
+  "scriptinglanguages": [
+    {
+      "label": "HTML",
+      "logo": "HTML.svg"
+    },
+    {
+      "label": "Python",
+      "logo": "python.svg"
+    },
+    {
+      "label": "Powershell",
+      "logo": "PowerShell.svg"
+    },
+    {
+      "label": "PHP(basis)",
+      "logo": "PHP.svg"
+    },
+    {
+      "label": "Javascript",
+      "logo": "Javascript.svg"
+    },
+    {
+      "label": "CSS",
+      "logo": "CSS.svg"
+    },
+    {
+      "label": "SASS (SCSS)",
+      "logo": "sass.svg"
+    }
+  ],
+  "nonscriptingLanguages": [
+    {
+      "label": "C",
+      "logo": "c.svg"
+    },
+    {
+      "label": "C#",
+      "logo": "c-sharp.svg"
+    },
+    {
+      "label": "C++",
+      "logo": "c-plusplus.svg"
+    }
+  ],
+  "intrestedTechnologies": [
+    {
+      "label": "Vue.js",
+      "logo": "Vue"
+    },
+    {
+      "label": "Drupal",
+      "logo": "Drupal"
+    },
+    {
+      "label": "Angular",
+      "logo": "Angular"
+    },
+    {
+      "label": "Svelte",
+      "logo": "Svelte"
+    }
+  ],
+  "Libraries_frameworks": [
+    {
+      "label": "Handlebars",
+      "logo": "Handlebars"
+    },
+    {
+      "label": "DiscordJs",
+      "logo": "discordJS"
+    },
+    {
+      "label": "DiscordJs",
+      "logo": "discordJS"
+    },
+    {
+      "label": "Express",
+      "logo": "Express"
+    }
+  ]
+}

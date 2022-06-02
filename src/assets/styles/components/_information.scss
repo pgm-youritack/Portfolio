@@ -1,0 +1,23 @@
+.information__block{
+    margin-top: 32px;
+    @include center();
+    flex-direction: row;
+    gap: 32px;
+    .information__header--name{
+        color: red;
+    }
+    .information{
+        width: 33.6875rem;
+        margin: 16px;
+    }
+    p{
+        margin: 0rem;
+    }
+}
+.information__future{
+    margin-top: 48px;
+    @include center();
+    .information__paragraph{
+        width: 30rem;
+    }
+}

@@ -1,0 +1,21 @@
+.nav{
+    display: flex;
+  justify-content: space-between;
+  margin: 16px;
+
+    .nav__items{
+        display: flex;
+        gap: 32px;
+        font-size: 26px;
+    }
+    .nav__item{
+        list-style: none;
+        a{
+            text-decoration: none;
+        }
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    
+}

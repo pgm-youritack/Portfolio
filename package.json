@@ -1,0 +1,26 @@
+{
+  "name": "tack-youri-eleventy-pgm.zip",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx @11lty/eleventy --pathprefix=portfolio",
+    "serve": "npx @11ty/eleventy --serve",
+    "scripts": "esbuild src/scripts/main.js --bundle --outfile=docs/assets/scripts/main.js --watch",
+    "watch": "npx sass src/assets/styles/main.scss docs/assets/styles/main.css --watch --style=compressed",
+    "start": "concurrently npm:serve npm:watch npm:scripts"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.0",
+    "@11ty/eleventy-navigation": "^0.3.2",
+    "sass": "^1.49.9"
+  },
+  "dependencies": {
+    "@11ty/eleventy-img": "^2.0.0",
+    "concurrently": "^7.0.0",
+    "esbuild": "^0.14.38",
+    "npm": "^8.12.0"
+  }
+}

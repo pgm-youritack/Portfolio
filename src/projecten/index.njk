@@ -1,0 +1,28 @@
+---
+title: projecten
+eleventyNavigation:
+    key: Projecten
+    order: 2
+    url: /projecten/
+---
+
+{% extends "layouts/list.njk" %}
+
+{% block top %}
+    <h1><em>Keeping up</em> with the GDM’ers</h1>
+{% endblock %}
+
+{% block middle %}
+<ul>
+   {% for Project in collections.Project %}
+        <li class="list__item">
+       <div class="list__item-title"><h3>{{Project.data.title}}</h3>
+       </div>
+       <div class="list__item-info">
+       <p>{{Project.data.paragraph}}</p>
+       <a href="{{Project.url |url}}">lees meer+</a>
+       </div>
+       </li>
+   {% endfor %}
+   </ul>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% set navPages = collections.all | eleventyNavigation %}
+<nav class="nav">
+  <a href="{{'/' |url}}">{% image "./src/assets/images/name-logo.svg","logo", "icon", "1920", "(min-width: 10)"%}</a>
+  
+<ul class="nav__items">
+{%- for entry in navPages %}
+  <li class="nav__item {% if entry.url === page.url%} selected{% endif %}">
+    <a href="{{ entry.url | url }}">{{ entry.title }}</a>
+    
+  </li>
+  
+{%- endfor %}
+</ul>
+</nav>

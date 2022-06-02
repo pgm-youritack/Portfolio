@@ -1,0 +1,61 @@
+---
+title: Home
+eleventyNavigation:
+    key: Home
+    order: 1
+    url: /
+---
+
+{% extends "layouts/list.njk" %}
+
+{% block top %}
+    <div class="information__block">
+        <img class="profile_picture" src="" alt="">
+        <div class="information">
+            <h1 class="information__header">Gegroet, ik ben <span class="information__header--name">Youri Tack</span></h1>
+            <p>Ik ben een programmeur voor front- & backend.</p>
+            <p>Ook een beginnende elektronisch ingenieur.</p>
+        </div>
+    </div>
+{% endblock %}
+{% block middle %}
+    <div class="information__future">
+
+        <div class="information">
+            <h1 class="information__header">Wat ik later wil doen in de <span>Toekomst</span></h1>
+            <p class="information__paragraph"> Later voor als hoofd werk in de toekomst. Wil graag werken als een helpdesk voor mensen.omdat ik graag kleine programma's schrijf, werken met hardware. voor mensen die ook hulp nodig heeft met netwerken.
+            </p>
+
+        </div>
+    </div>
+
+    <div class="technologies">
+        <h1>Technologieën</h1>
+        <div class="lists__technologies">
+            <div class="list__technologies">
+                <h2>script languages</h2>
+                <ul class="list">
+                    {% for scriptlanguage in languages.scriptinglanguages -%}
+                        <li class="list__item">
+                            {% image "./src/assets/images/"~scriptlanguage.logo,"logo", "icon", "1920", "(min-width: 10)"%}
+                            <p class="icon__name">{{scriptlanguage.label}}</P>
+                        </li>
+                    {% endfor -%}
+                </ul>
+            </div>
+            <div class="list__technologies">
+                <h2>not scripting languages</h2>
+                <ul class="list">
+                    {% for scriptlanguage in languages.nonscriptingLanguages -%}
+                        <li class="list__item">
+                {% image "./src/assets/images/"~scriptlanguage.logo,"logo", "icon", "1920", "(min-width: 10)"%}
+                            <p class="icon__name">{{scriptlanguage.label}}</P>
+                        </li>
+                    {% endfor -%}
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+{% endblock %}
