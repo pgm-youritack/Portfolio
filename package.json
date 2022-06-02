@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npx @11lty/eleventy --pathprefix=portfolio",
+    "build": "npx @11lty/eleventy --pathprefix=Portfolio",
     "serve": "npx @11ty/eleventy --serve",
     "scripts": "esbuild src/scripts/main.js --bundle --outfile=docs/assets/scripts/main.js --watch",
     "watch": "npx sass src/assets/styles/main.scss docs/assets/styles/main.css --watch --style=compressed",

@@ -23,7 +23,7 @@ async function imageShortcode(src, alt, className, width = 750, sizes) {
     widths: [width],
     formats: ["webp", "jpeg", "png", "svg"],
     outputDir: "./docs/assets/images/",
-    urlPath: "/portfolio/assets/images/"
+    urlPath: "/Portfolio/assets/images/"
   });
 
   let imageAttributes = {
