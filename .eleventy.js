@@ -10,7 +10,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
     return {
       ...eleventyConfig,
-      pathPrefix: "/portfolio/",
+      pathPrefix: "/Portfolio/",
       dir: {
         input: 'src',
         output: 'docs',
