@@ -1,7 +1,10 @@
 .nav{
     display: flex;
-  justify-content: space-between;
-  margin: 16px;
+  justify-content: space-evenly;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: white;
 
     .nav__items{
         display: flex;
@@ -12,9 +15,20 @@
         list-style: none;
         a{
             text-decoration: none;
+            color: $dark-gray;
         }
-        &:hover{
+        &:hover:not(.selected){
             text-decoration: underline;
+            transform: scale(1.1);
+        }
+        &.selected a{
+            text-decoration: none;
+            color: red;
+            list-style: none;
+            &:hover{
+                text-decoration: underline;
+                transform: scale(1.1);
+            }
         }
     }
     

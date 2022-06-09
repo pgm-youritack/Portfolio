@@ -1,0 +1,21 @@
+.footernav{
+    display: flex;
+    flex-direction: column;
+    .footernav__items{
+        margin-top: 0rem;
+        list-style: none;
+        .footernav__item{
+            
+            margin: 16px;
+            :hover{
+                text-decoration: underline;
+                transform: scale(1.1);
+            }
+            a{
+                text-decoration: none;
+                color: $dark-gray;
+            }
+            
+        }
+    }
+}

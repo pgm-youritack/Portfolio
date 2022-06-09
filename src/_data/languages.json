@@ -25,6 +25,10 @@
       "logo": "CSS.svg"
     },
     {
+      "label": "discord Js",
+      "logo": "discordJS.svg"
+    },
+    {
       "label": "SASS (SCSS)",
       "logo": "sass.svg"
     }
@@ -43,40 +47,41 @@
       "logo": "c-plusplus.svg"
     }
   ],
-  "intrestedTechnologies": [
+  "favorites": [
     {
-      "label": "Vue.js",
-      "logo": "Vue"
+      "label": "SASS",
+      "logo": "sass.svg"
     },
     {
-      "label": "Drupal",
-      "logo": "Drupal"
+      "label": "Eleventy",
+      "logo": "11ty.svg"
     },
     {
-      "label": "Angular",
-      "logo": "Angular"
+      "label": "C#",
+      "logo": "c-sharp.svg"
     },
     {
-      "label": "Svelte",
-      "logo": "Svelte"
+      "label": "visual studio",
+      "logo": "visual-studio.svg"
+    },
+    {
+      "label": "visual studio Code",
+      "logo": "visual-studio-code.svg"
     }
   ],
-  "Libraries_frameworks": [
+  
+  "IDE": [
     {
-      "label": "Handlebars",
-      "logo": "Handlebars"
+      "label": "visual studio",
+      "logo": "visual-studio.svg"
     },
     {
-      "label": "DiscordJs",
-      "logo": "discordJS"
+      "label": "visual studio Code",
+      "logo": "visual-studio-code.svg"
     },
     {
-      "label": "DiscordJs",
-      "logo": "discordJS"
-    },
-    {
-      "label": "Express",
-      "logo": "Express"
+      "label": "Brackets",
+      "logo": "brackets.svg"
     }
   ]
 }

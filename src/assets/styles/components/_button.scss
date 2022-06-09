@@ -1,0 +1,19 @@
+.button_link{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: #add8e6;
+    color: black;
+    border-radius: 25px;
+    border: none;
+    font-size:  15px;
+    width: 8rem;
+    height: 50px;
+    padding: 1rem;
+    transition: background-color 250ms linear,color 250ms linear,outline 250ms linear,scale 250ms linear;
+    &:hover{
+        transform: scale(1.1);
+        background-color: blueviolet;
+        color: white;
+    }
+}

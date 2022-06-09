@@ -1,6 +1,9 @@
 h1{
     font-family: $main-font;
 }
+h3{
+    font-family: $main-font;
+}
 h2{
     font-family: $main-font;
 }
@@ -8,5 +11,9 @@ p{
     font-family: $main-font;
 }
 a{
+    font-family: $main-font;
+    text-decoration: none;
+}
+li{
     font-family: $main-font;
 }

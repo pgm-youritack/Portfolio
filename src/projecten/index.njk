@@ -7,9 +7,8 @@ eleventyNavigation:
 ---
 
 {% extends "layouts/list.njk" %}
-
 {% block top %}
-    <h1><em>Keeping up</em> with the GDM’ers</h1>
+    <h1>Al mijn gemaakte projecten</h1>
 {% endblock %}
 
 {% block middle %}
@@ -20,7 +19,7 @@ eleventyNavigation:
        </div>
        <div class="list__item-info">
        <p>{{Project.data.paragraph}}</p>
-       <a href="{{Project.url |url}}">lees meer+</a>
+       <a class="button_link" href="{{Project.url |url}}">lees meer+</a>
        </div>
        </li>
    {% endfor %}

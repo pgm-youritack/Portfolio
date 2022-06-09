@@ -5,24 +5,37 @@ eleventyNavigation:
     order: 2
     url: /diensten/
 ---
-{% extends "layouts/grid.njk" %}
+{% extends "layouts/columngrid.njk" %}
+
 {% block top %}
-    <h1>diensten dat ik aanbied</h1>
-{% endblock %}
 
-{% block right %}
-    <div class="diensten">
-        <h1>Elektriciteit & Elektronica</h1>
-        </div>
-{% endblock %}
+<h1>Mijn diensten</h1>
 
+{% endblock %}
 {% block left %}
-    <div class="diensten">
-        <h1>Front- en Backend</h1>
-        </div>
+
+<div class="service">
+    <h1 class="service__title">FullStack developer</h1>
+     {% image "./src/assets/images/services/full-stack-developer.svg","logo", "service__icon", "1920", "(min-width: 10)"%}
+     <p>Als programmeur wil ik,volgens de wensen van de gebruiker, nieuwe software ontwikkelen en bestaande software aanpassen. Software zorgt ernamelijk voor dat Apps werken, websites draaien en apparaten met elkaar kunnen communiceren.</p>
+</div>
+
 {% endblock %}
-{% block bottom %}
-        <div class="diensten">
-        <h1>Netwerken</h1>
-        </div>
+{% block middle %}
+
+<div class="service">
+    <h1>electronica IT'er</h1>
+     {% image "./src/assets/images/services/electrical-engineering.svg","logo", "service__icon", "1920", "(min-width: 10)"%}
+<p></p>
+</div>
+
+{% endblock %}
+{% block right %}
+
+<div class="service">
+    <h1>Netwerken</h1>
+    {% image "./src/assets/images/services/local-computer-network.svg","logo", "service__icon", "1920", "(min-width: 10)"%}
+    <p>Als netwerkbeheerder zorg ik voor het beheer en de veiligheid van een computer netwerk, De infrastructuur van servers,netwerkapparaten,kabels en werkstations. Ik los problemen en storingen op en help de gebruikers van het netwerk.</p>
+</div>
+
 {% endblock %}

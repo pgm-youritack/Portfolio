@@ -1,0 +1,28 @@
+{% extends "layouts/base.njk" %}
+{% block main %}
+<div class="grid__column">
+    
+        {% block top %}
+        
+    {% endblock %}
+    <div class="grid__column-row">
+        <div class="grid-column__left">
+            {% block left %}
+            
+        {% endblock %}</div>
+        
+
+        <div class=" grid-column__middle">
+            {% block middle %}
+            
+        {% endblock %}</div>
+
+        <div class="grid-column__right">
+            {% block right %}
+            
+        {% endblock %}</div>
+    </div>
+  
+</div>
+    
+{% endblock %}

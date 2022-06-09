@@ -1,0 +1,43 @@
+.page {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  .page__Title {
+    font-size: 50px;
+  }    .page_images {
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+
+      .page__picture {
+        display: block;
+        max-width: 300px;
+        max-height: 600px;
+        width: auto;
+        height: auto;
+        box-shadow: 0px 3px 4px #00000040;
+        transition: transform 0.2s ease-in-out;
+        &:hover {
+          transform: scale(2.4);
+        }
+      }
+    }
+  .page_info {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+
+    .page_info_description{
+        text-align: left;
+    }
+    .project_technology_list{
+      list-style: none;
+      text-align: left;
+      .project_technology_item{
+        margin-top: 1rem;
+      }
+    }
+  }
+
+}

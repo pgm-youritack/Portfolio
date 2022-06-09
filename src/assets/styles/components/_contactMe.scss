@@ -1,0 +1,18 @@
+.contactMe{
+    display: flex;
+    flex-direction: column;
+    .contactMe-link{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+        gap:1rem;
+        .contactIcon{
+            width: 40px;
+            height:40px ;
+        }
+    }
+    
+}

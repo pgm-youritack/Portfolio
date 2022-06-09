@@ -14,7 +14,7 @@ eleventyNavigation:
         <div class="information">
             <h1 class="information__header">Gegroet, ik ben <span class="information__header--name">Youri Tack</span></h1>
             <p>Ik ben een programmeur voor front- & backend.</p>
-            <p>Ook een beginnende elektronisch ingenieur.</p>
+            <p>en beginned elektronica IT'er.</p>
         </div>
     </div>
 {% endblock %}
@@ -22,8 +22,8 @@ eleventyNavigation:
     <div class="information__future">
 
         <div class="information">
-            <h1 class="information__header">Wat ik later wil doen in de <span>Toekomst</span></h1>
-            <p class="information__paragraph"> Later voor als hoofd werk in de toekomst. Wil graag werken als een helpdesk voor mensen.omdat ik graag kleine programma's schrijf, werken met hardware. voor mensen die ook hulp nodig heeft met netwerken.
+            <h1 class="information__header">Wat ik  wil doen in de <span>Toekomst</span></h1>
+            <p class="information__paragraph"> Ik wil graag werken als helpdesk, omdat ik graag kleine programma's schrijf en werk met hardware. Netwerken behoort ook tot de mogelijkheden.
             </p>
 
         </div>
@@ -31,13 +31,14 @@ eleventyNavigation:
 
     <div class="technologies">
         <h1>Technologieën</h1>
+
         <div class="lists__technologies">
             <div class="list__technologies">
                 <h2>script languages</h2>
                 <ul class="list">
                     {% for scriptlanguage in languages.scriptinglanguages -%}
                         <li class="list__item">
-                            {% image "./src/assets/images/"~scriptlanguage.logo,"logo", "icon", "1920", "(min-width: 10)"%}
+                            {% image "./src/assets/images/technologies/"~scriptlanguage.logo,"logo", "icon", "1920", "(min-width: 10)"%}
                             <p class="icon__name">{{scriptlanguage.label}}</P>
                         </li>
                     {% endfor -%}
@@ -48,14 +49,52 @@ eleventyNavigation:
                 <ul class="list">
                     {% for scriptlanguage in languages.nonscriptingLanguages -%}
                         <li class="list__item">
-                {% image "./src/assets/images/"~scriptlanguage.logo,"logo", "icon", "1920", "(min-width: 10)"%}
+                            {% image "./src/assets/images/technologies/"~scriptlanguage.logo,"logo", "icon", "1920", "(min-width: 10)"%}
                             <p class="icon__name">{{scriptlanguage.label}}</P>
                         </li>
                     {% endfor -%}
                 </ul>
             </div>
-
+            <div class="list__technologies">
+                <h2>gebruikte IDE's</h2>
+                <ul class="list">
+                    {% for scriptlanguage in languages.IDE -%}
+                        <li class="list__item">
+                            {% image "./src/assets/images/technologies/"~scriptlanguage.logo,"logo", "icon", "1920", "(min-width: 10)"%}
+                            <p class="icon__name">{{scriptlanguage.label}}</P>
+                        </li>
+                    {% endfor -%}
+                </ul>
+            </div>
+        </div>
+        <div class="list__technologies-sideways">
+            <h2>favorieten Technologieën</h2>
+            <ul class="list">
+                {% for scriptlanguage in languages.favorites -%}
+                    <li class="list__item">
+                        {% image "./src/assets/images/technologies/"~scriptlanguage.logo,"logo", "icon", "1920", "(min-width: 10)"%}
+                        <p class="icon__name">{{scriptlanguage.label}}</P>
+                    </li>
+                {% endfor -%}
+            </ul>
         </div>
 
     </div>
+
+</div>
+{% endblock %}
+{% block bottom %}
+<div class="contact">
+    <h1>Contacteer mij</h1>
+    <form class="contactForm">
+        <div class="contactForm__miniflex">
+            <label class="contactForm__label">Naam<input class="inputText" type="text" name="name" placeholder="voornaam achternaam"></label>
+            <label class="contactForm__label">E-mail<input class="inputText" type="email" placeholder="example@gmail.com" name="email"></label>
+        </div>
+
+        <label class="contactForm__label">Onderwerp<input class="inputText" type="email" placeholder="algemeen" name="text"></label>
+        <label class="contactForm__label">jouw onderwerp<textarea class="inputText" type="email" placeholder="algemeen" name="text"></textarea>
+        </label>
+    </form>
+</div>
 {% endblock %}

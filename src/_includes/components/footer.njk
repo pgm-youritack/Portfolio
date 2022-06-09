@@ -1,0 +1,24 @@
+<footer>
+    <div class="contactMe">
+        <a class="contactMe-link" href = "mailto: youritack@skynet.be">{% image "./src/assets/images/footer/mail-142.svg","", "contactIcon", "1920", "(min-width: 10)"%}youritack@skynet.be</a>
+        <p class="contactMe-link">{% image "./src/assets/images/footer/phone-504.svg","logo", "contactIcon", "1920", "(min-width: 10)"%}+32 496 38 90 71</p>
+    </div>
+    <div class="socialMedia">
+        <a class="socialMedia__link" target="_blank" href="https://twitter.com/TackYouri">{% image "./src/assets/images/footer/twitter.svg","logo", "socialMediaIcon", "1920", "(min-width: 10)"%}</a>
+        <a class="socialMedia__link" target="_blank"  href="https://www.linkedin.com/in/youri-tack-303461238/">{% image "./src/assets/images/footer/linkedin-icon.svg","logo", "socialMediaIcon", "1920", "(min-width: 10)"%}</a>
+        <a class="socialMedia__link" target="_blank"  href="https://github.com/pgm-youritack">{% image "./src/assets/images/footer/github-icon.svg","logo", "socialMediaIcon", "1920", "(min-width: 10)"%}</a>
+    </div>
+    {% set navPages = collections.all | eleventyNavigation %}
+<div class="footernav">  
+<ul class="footernav__items">
+{%- for entry in navPages %}
+  <li class="footernav__item">
+    <a href="{{ entry.url | url }}">{{ entry.title }}</a>
+    
+  </li>
+  
+{%- endfor %}
+</ul>
+</div>
+
+</footer>
