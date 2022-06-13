@@ -86,7 +86,7 @@ eleventyNavigation:
 {% block bottom %}
 <div class="contact">
     <h1>Contacteer mij</h1>
-    <form class="contactForm">
+    <form class="contactForm" id="contact">
         <div class="contactForm__miniflex">
             <label class="contactForm__label">Naam<input class="inputText" type="text" name="name" placeholder="voornaam achternaam"></label>
             <label class="contactForm__label">E-mail<input class="inputText" type="email" placeholder="example@gmail.com" name="email"></label>
@@ -95,6 +95,7 @@ eleventyNavigation:
         <label class="contactForm__label">Onderwerp<input class="inputText" type="email" placeholder="algemeen" name="text"></label>
         <label class="contactForm__label">jouw onderwerp<textarea class="inputText" type="email" placeholder="algemeen" name="text"></textarea>
         </label>
+        <button class="form__submit" type="submit" form="contact">Verzenden <i class='fas fa-paper-plane'></i></button>
     </form>
 </div>
 {% endblock %}
